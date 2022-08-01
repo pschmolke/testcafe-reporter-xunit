@@ -40,9 +40,6 @@ module.exports = function () {
             if (testRunInfo.unstable)
                 name += ' (unstable)';
 
-            if (testRunInfo.screenshotPath)
-                name += ` (screenshots: ${testRunInfo.screenshotPath})`;
-
             name = this.escapeHtml(name);
 
             var openTag = `<testcase classname="${this.currentFixture.name}" ` +
@@ -50,6 +47,9 @@ module.exports = function () {
                           `name="${name}" time="${testRunInfo.durationMs / 1000}">\n`;
 
             this.report += this.indentString(openTag, 2);
+
+            if (testRunInfo.screenshotPath)
+                this.report += this.indentString( `<system-out>[[ATTACHMENT|${this.escapeHtml(testRunInfo.screenshotPath)}]]</system-out>\n`, 4 );
 
             if (testRunInfo.skipped) {
                 this.skipped++;

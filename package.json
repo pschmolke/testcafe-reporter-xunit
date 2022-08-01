@@ -1,7 +1,7 @@
 {
-  "name": "testcafe-reporter-xunit",
+  "name": "testcafe-reporter-xunit-gitlab-fork",
   "version": "2.2.1",
-  "description": "xUnit TestCafe reporter plugin.",
+  "description": "xUnit TestCafe reporter plugin. Adopted to allow gitlab the use of screenshots",
   "repository": "https://github.com/DevExpress/testcafe-reporter-xunit",
   "author": {
     "name": "Developer Express Inc.",

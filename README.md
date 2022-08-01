@@ -1,5 +1,4 @@
 # testcafe-reporter-xunit
-[![Build Status](https://travis-ci.org/DevExpress/testcafe-reporter-xunit.svg)](https://travis-ci.org/DevExpress/testcafe-reporter-xunit)
 
 This is the **xUnit** reporter plugin for [TestCafe](http://devexpress.github.io/testcafe).
 
